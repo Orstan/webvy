@@ -3,6 +3,7 @@ import { ukrainianCities } from '@/data/ukrainian-cities';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import styles from '../city.module.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -68,19 +69,19 @@ export default async function CityPage({ params }: CityPageProps) {
   ];
 
   return (
-    <main className="city-page">
+    <main className={styles["city-page"]}>
       <header>
-        <div className="container">
-          <div className="header-content">
-            <div className="logo">
+        <div className={styles.container}>
+          <div className={styles["header-content"]}>
+            <div className={styles.logo}>
               <a href="/">
-                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className="logo-image" unoptimized />
+                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className={styles["logo-image"]} unoptimized />
               </a>
             </div>
-            <div className="nav-content">
+            <div className={styles["nav-content"]}>
               <nav>
-                <div className="nav-container">
-                  <ul className="menu">
+                <div className={styles["nav-container"]}>
+                  <ul className={styles.menu}>
                     <li><a href="/">Головна</a></li>
                     <li><a href="/#calculator">Калькулятор</a></li>
                     <li><a href="/#services">Послуги</a></li>
@@ -93,33 +94,33 @@ export default async function CityPage({ params }: CityPageProps) {
                 </div>
               </nav>
             </div>
-            <div className="cta-button">
-              <a href="/#order" className="btn">Замовити</a>
+            <div className={styles["cta-button"]}>
+              <a href="/#order" className={styles.btn}>Замовити</a>
             </div>
           </div>
         </div>
       </header>
 
-      <section className="city-hero">
-        <div className="container">
-          <h1 className="city-title">Розробка сайтів в місті {city.name}</h1>
-          <p className="city-subtitle">Професійне створення сайтів під ключ: від ідеї до запуску</p>
+      <section className={styles["city-hero"]}>
+        <div className={styles.container}>
+          <h1 className={styles["city-title"]}>Розробка сайтів в місті {city.name}</h1>
+          <p className={styles["city-subtitle"]}>Професійне створення сайтів під ключ: від ідеї до запуску</p>
         </div>
       </section>
 
-      <section className="city-services">
-        <div className="container">
+      <section className={styles["city-services"]}>
+        <div className={styles.container}>
           <h2>Послуги веб-розробки в місті {city.name}</h2>
-          <div className="services-grid">
+          <div className={styles["services-grid"]}>
             {services.map((service) => (
-              <div key={service.slug} className="service-card">
+              <div key={service.slug} className={styles["service-card"]}>
                 <h3>{service.name}</h3>
-                <p className="service-price">{service.price}</p>
-                <p className="service-description">
+                <p className={styles["service-price"]}>{service.price}</p>
+                <p className={styles["service-description"]}>
                   Професійна розробка {service.name.toLowerCase()} для бізнесу в місті {city.name}.
                   Сучасний дизайн, адаптивна верстка, SEO-оптимізація.
                 </p>
-                <Link href={`/city/${city.slug}/${service.slug}`} className="service-link">
+                <Link href={`/city/${city.slug}/${service.slug}`} className={styles["service-link"]}>
                   Детальніше
                 </Link>
               </div>
@@ -128,11 +129,11 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
-      <section className="city-content">
-        <div className="container">
+      <section className={styles["city-content"]}>
+        <div className={styles.container}>
           <h2>Веб-розробка в місті {city.name}</h2>
-          <div className="content-blocks">
-            <div className="content-block">
+          <div className={styles["content-blocks"]}>
+            <div className={styles["content-block"]}>
               <h3>Чому варто замовити сайт у WebVy?</h3>
               <p>
                 Якщо ви шукаєте професійну розробку сайту в місті {city.name}, WebVy пропонує повний спектр послуг:
@@ -144,7 +145,7 @@ export default async function CityPage({ params }: CityPageProps) {
               </p>
             </div>
             
-            <div className="content-block">
+            <div className={styles["content-block"]}>
               <h3>Наші переваги для клієнтів з міста {city.name}</h3>
               <ul>
                 <li>Індивідуальний підхід до кожного проекту</li>
@@ -159,32 +160,32 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
-      <section className="city-blog-section">
-        <div className="container">
+      <section className={styles["city-blog-section"]}>
+        <div className={styles.container}>
           <h2>Корисні статті для бізнесу в місті {city.name}</h2>
-          <div className="blog-links">
-            <Link href={`/city/${city.slug}/blog/yak-vybraty-hostyng`} className="blog-link">
+          <div className={styles["blog-links"]}>
+            <Link href={`/city/${city.slug}/blog/yak-vybraty-hostyng`} className={styles["blog-link"]}>
               Як вибрати надійний хостинг для бізнес-сайту в {city.name}
             </Link>
-            <Link href={`/city/${city.slug}/blog/seo-dlya-lendingu`} className="blog-link">
+            <Link href={`/city/${city.slug}/blog/seo-dlya-lendingu`} className={styles["blog-link"]}>
               SEO для лендингу: з чого почати оптимізацію в {city.name}
             </Link>
-            <Link href={`/city/${city.slug}/blog/react-vs-wordpress`} className="blog-link">
+            <Link href={`/city/${city.slug}/blog/react-vs-wordpress`} className={styles["blog-link"]}>
               React/Next.js чи WordPress: що краще для бізнесу в {city.name}
             </Link>
-            <Link href={`/city/${city.slug}/blog/stvorennya-saitu-cina`} className="blog-link">
+            <Link href={`/city/${city.slug}/blog/stvorennya-saitu-cina`} className={styles["blog-link"]}>
               Скільки коштує створення сайту в {city.name}: з чого складається ціна
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="city-cta-section">
-        <div className="container">
-          <div className="cta-card">
+      <section className={styles["city-cta-section"]}>
+        <div className={styles.container}>
+          <div className={styles["cta-card"]}>
             <h2>Замовити сайт в місті {city.name}</h2>
             <p>Готові обговорити ваш проект? Зв'яжіться з нами для безкоштовної консультації.</p>
-            <Link href="/#order" className="btn">
+            <Link href="/#order" className={styles.btn}>
               Замовити сайт
             </Link>
           </div>
@@ -192,15 +193,15 @@ export default async function CityPage({ params }: CityPageProps) {
       </section>
 
       <footer>
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-logo">
+        <div className={styles.container}>
+          <div className={styles["footer-content"]}>
+            <div className={styles["footer-logo"]}>
               <Link href="/">
-                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className="logo-image" unoptimized />
+                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className={styles["logo-image"]} unoptimized />
               </Link>
             </div>
-            <div className="footer-links">
-              <div className="footer-column">
+            <div className={styles["footer-links"]}>
+              <div className={styles["footer-column"]}>
                 <h3>Послуги</h3>
                 <ul>
                   {services.map((service) => (
@@ -212,7 +213,7 @@ export default async function CityPage({ params }: CityPageProps) {
                   ))}
                 </ul>
               </div>
-              <div className="footer-column">
+              <div className={styles["footer-column"]}>
                 <h3>Контакти</h3>
                 <ul>
                   <li><a href="mailto:my@webvy.online">my@webvy.online</a></li>
@@ -222,7 +223,7 @@ export default async function CityPage({ params }: CityPageProps) {
               </div>
             </div>
           </div>
-          <div className="copyright">
+          <div className={styles.copyright}>
             &copy; {new Date().getFullYear()} WebVy. Всі права захищені.
           </div>
         </div>

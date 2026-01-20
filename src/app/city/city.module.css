@@ -1,0 +1,369 @@
+/* Загальні стилі для сторінок міст */
+.city-page {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Стилі для хедера */
+.city-page header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.city-page .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-page .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.city-page .logo {
+  display: flex;
+  align-items: center;
+}
+
+.city-page .nav-content {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.city-page .menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.city-page .menu li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  font-size: 0.95rem;
+}
+
+.city-page .menu li a:hover {
+  color: #1e3a8a;
+}
+
+.city-page .btn {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.city-page .btn:hover {
+  background-color: #152b65;
+}
+
+/* Стилі для героя */
+.city-page .city-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.city-page .city-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.city-page .city-subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Стилі для секції послуг */
+.city-page .city-services {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+.city-page .city-services h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #1e3a8a;
+}
+
+.city-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.city-page .service-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.city-page .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.city-page .service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e3a8a;
+}
+
+.city-page .service-price {
+  font-weight: 700;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.city-page .service-description {
+  margin-bottom: 1.5rem;
+  color: #64748b;
+}
+
+.city-page .service-link {
+  color: #1e3a8a;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.city-page .service-link:hover {
+  text-decoration: underline;
+}
+
+/* Стилі для контентної секції */
+.city-page .city-content {
+  padding: 5rem 0;
+}
+
+.city-page .city-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #1e3a8a;
+}
+
+.city-page .content-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.city-page .content-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1e3a8a;
+}
+
+.city-page .content-block p {
+  margin-bottom: 1.5rem;
+}
+
+.city-page .content-block ul {
+  padding-left: 1.5rem;
+}
+
+.city-page .content-block li {
+  margin-bottom: 0.75rem;
+}
+
+/* Стилі для секції блогу */
+.city-page .city-blog-section {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+.city-page .city-blog-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #1e3a8a;
+}
+
+.city-page .blog-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.city-page .blog-link {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.city-page .blog-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для CTA секції */
+.city-page .city-cta-section {
+  padding: 5rem 0;
+}
+
+.city-page .cta-card {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.city-page .cta-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.city-page .cta-card p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.city-page .cta-card .btn {
+  background-color: white;
+  color: #1e3a8a;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+}
+
+.city-page .cta-card .btn:hover {
+  background-color: #f8fafc;
+}
+
+/* Стилі для футера */
+.city-page footer {
+  background-color: #1e293b;
+  color: white;
+  padding: 4rem 0 2rem;
+}
+
+.city-page .footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.city-page .footer-logo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.city-page .footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.city-page .footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+.city-page .footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.city-page .footer-column li {
+  margin-bottom: 0.75rem;
+}
+
+.city-page .footer-column a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.city-page .footer-column a:hover {
+  color: white;
+}
+
+.city-page .copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .city-page .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .city-page .nav-content {
+    margin: 1rem 0;
+  }
+  
+  .city-page .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .city-page .city-title {
+    font-size: 2rem;
+  }
+  
+  .city-page .city-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .city-page .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .city-page .content-blocks {
+    grid-template-columns: 1fr;
+  }
+  
+  .city-page .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .city-page .cta-card {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -11,10 +11,10 @@
       "has": [
         {
           "type": "host",
-          "value": "webvy.online"
+          "value": "www.webvy.online"
         }
       ],
-      "destination": "https://www.webvy.online/:path*",
+      "destination": "https://webvy.online/:path*",
       "permanent": true
     }
   ]

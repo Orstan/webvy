@@ -4,6 +4,7 @@ import { blogPosts } from '@/data/blog-posts';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import styles from '../blog-city.module.css';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -125,19 +126,19 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
   const content = generateCitySpecificContent();
 
   return (
-    <main className="city-blog-page">
+    <main className={styles["blog-city-page"]}>
       <header>
-        <div className="container">
-          <div className="header-content">
-            <div className="logo">
+        <div className={styles.container}>
+          <div className={styles["header-content"]}>
+            <div className={styles.logo}>
               <a href="/">
-                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className="logo-image" unoptimized />
+                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className={styles["logo-image"]} unoptimized />
               </a>
             </div>
-            <div className="nav-content">
+            <div className={styles["nav-content"]}>
               <nav>
-                <div className="nav-container">
-                  <ul className="menu">
+                <div className={styles["nav-container"]}>
+                  <ul className={styles.menu}>
                     <li><a href="/">Головна</a></li>
                     <li><a href="/#calculator">Калькулятор</a></li>
                     <li><a href="/#services">Послуги</a></li>
@@ -150,30 +151,30 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
                 </div>
               </nav>
             </div>
-            <div className="cta-button">
-              <a href="/#order" className="btn">Замовити</a>
+            <div className={styles["cta-button"]}>
+              <a href="/#order" className={styles.btn}>Замовити</a>
             </div>
           </div>
         </div>
       </header>
 
-      <section className="blog-hero">
-        <div className="container">
-          <div className="blog-breadcrumbs">
+      <section className={styles["blog-hero"]}>
+        <div className={styles.container}>
+          <div className={styles["blog-breadcrumbs"]}>
             <Link href="/">Головна</Link> &gt; 
             <Link href="/blog">Блог</Link> &gt; 
             <Link href={`/city/${city.slug}`}>{city.name}</Link> &gt; 
             <span>{post.title}</span>
           </div>
-          <h1 className="blog-title">{content.title}</h1>
+          <h1 className={styles["blog-title"]}>{content.title}</h1>
         </div>
       </section>
 
-      <section className="blog-content">
-        <div className="container">
-          <div className="blog-inner">
-            <div className="blog-text">
-              <p className="blog-intro">{content.intro}</p>
+      <section className={styles["blog-content"]}>
+        <div className={styles.container}>
+          <div className={styles["blog-inner"]}>
+            <div className={styles["blog-text"]}>
+              <p className={styles["blog-intro"]}>{content.intro}</p>
               
               {content.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
@@ -183,8 +184,8 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
               <p>{content.conclusion}</p>
             </div>
             
-            <div className="blog-sidebar">
-              <div className="sidebar-section">
+            <div className={styles["blog-sidebar"]}>
+              <div className={styles["sidebar-section"]}>
                 <h3>Послуги в місті {city.name}</h3>
                 <ul>
                   <li><Link href={`/city/${city.slug}/landing-page`}>Лендінг в {city.name}</Link></li>
@@ -194,7 +195,7 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
                 </ul>
               </div>
               
-              <div className="sidebar-section">
+              <div className={styles["sidebar-section"]}>
                 <h3>Інші статті для {city.name}</h3>
                 <ul>
                   {blogPosts
@@ -215,12 +216,12 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
         </div>
       </section>
 
-      <section className="blog-cta-section">
-        <div className="container">
-          <div className="blog-cta-card">
+      <section className={styles["blog-cta-section"]}>
+        <div className={styles.container}>
+          <div className={styles["blog-cta-card"]}>
             <h2>Замовити сайт в місті {city.name}</h2>
             <p>Готові обговорити ваш проект? Зв'яжіться з нами для безкоштовної консультації.</p>
-            <Link href="/#order" className="btn">
+            <Link href="/#order" className={styles.btn}>
               Замовити сайт
             </Link>
           </div>
@@ -228,15 +229,15 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
       </section>
 
       <footer>
-        <div className="container">
-          <div className="footer-content">
-            <div className="footer-logo">
+        <div className={styles.container}>
+          <div className={styles["footer-content"]}>
+            <div className={styles["footer-logo"]}>
               <Link href="/">
-                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className="logo-image" unoptimized />
+                <Image src="/img/logo.webp" alt="WebVy" width={120} height={40} style={{ width: 'auto', height: '40px' }} className={styles["logo-image"]} unoptimized />
               </Link>
             </div>
-            <div className="footer-links">
-              <div className="footer-column">
+            <div className={styles["footer-links"]}>
+              <div className={styles["footer-column"]}>
                 <h3>Послуги</h3>
                 <ul>
                   <li><Link href={`/city/${city.slug}/landing-page`}>Лендінг в {city.name}</Link></li>
@@ -245,7 +246,7 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
                   <li><Link href={`/city/${city.slug}/online-store`}>Інтернет-магазин в {city.name}</Link></li>
                 </ul>
               </div>
-              <div className="footer-column">
+              <div className={styles["footer-column"]}>
                 <h3>Контакти</h3>
                 <ul>
                   <li><a href="mailto:my@webvy.online">my@webvy.online</a></li>
@@ -255,7 +256,7 @@ export default async function CityBlogPostPage({ params }: CityBlogPostPageProps
               </div>
             </div>
           </div>
-          <div className="copyright">
+          <div className={styles.copyright}>
             &copy; {new Date().getFullYear()} WebVy. Всі права захищені.
           </div>
         </div>
