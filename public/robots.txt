@@ -1,0 +1,54 @@
+# WebVy - Розробка сайтів під ключ
+# https://webvy.online
+
+User-agent: *
+Allow: /
+
+# Основні сторінки
+Allow: /portfolio
+Allow: /blog
+Allow: /blog/*
+Allow: /privacy-policy
+
+# Заборона службових файлів
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /*.json$
+Disallow: /sw.js
+
+# Дозвіл для зображень
+Allow: /img/
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /images/
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# Посилання на карту сайту
+Sitemap: https://webvy.online/sitemap.xml
+
+# Host
+Host: https://webvy.online

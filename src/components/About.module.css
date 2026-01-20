@@ -1,0 +1,203 @@
+.about {
+  padding: 80px 0;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #1a237e, #4a6cf7, #41b3ff);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.aboutImage {
+  flex: 0 0 40%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.developerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.aboutImage:hover .developerImage {
+  transform: scale(1.03);
+}
+
+.aboutInfo {
+  flex: 0 0 55%;
+  color: var(--text-color);
+}
+
+.aboutSubtitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  position: relative;
+  display: inline-block;
+}
+
+.aboutSubtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #1a237e, #4a6cf7, #41b3ff);
+  border-radius: 2px;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+.aboutIntro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: var(--text-secondary);
+}
+
+.highlight {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.skillsSection, .whyMeSection {
+  margin-bottom: 25px;
+}
+
+.skillsTitle, .whyMeTitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.skillsList, .whyMeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillsList li, .whyMeList li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.checkmark {
+  color: #a0b3ff;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 20px;
+}
+
+.skillsList li span {
+  color: var(--text-secondary);
+  font-weight: normal;
+}
+
+.bulletPoint {
+  color: #a0b3ff;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 20px;
+}
+
+.mission {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+  border-left: 3px solid #a0b3ff;
+  padding-left: 15px;
+}
+
+.callToAction {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 992px) {
+  .aboutContent {
+    flex-direction: column;
+  }
+  
+  .aboutImage, .aboutInfo {
+    flex: 0 0 100%;
+  }
+  
+  .aboutImage {
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .aboutSubtitle {
+    font-size: 1.5rem;
+  }
+  
+  .aboutIntro, .mission {
+    font-size: 1rem;
+  }
+  
+  .skillsTitle, .whyMeTitle {
+    font-size: 1.2rem;
+  }
+  
+  .skillsList li, .whyMeList li {
+    font-size: 0.95rem;
+  }
+}

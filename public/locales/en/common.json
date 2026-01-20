@@ -1,0 +1,645 @@
+{
+  "site": {
+    "title": "WebVy - Web Development",
+    "description": "Professional web development for your business"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "calculator": "Calculator",
+    "contacts": "Contacts",
+    "portfolio": "Portfolio",
+    "about": "About me",
+    "reviews": "Reviews",
+    "blog": "Blog",
+    "order": "Order a Website"
+  },
+  "hero": {
+    "title": "Creating Modern Websites",
+    "subtitle": "Web development of any complexity",
+    "cta": "Order a Website",
+    "title_main": "Turnkey website development: landing pages, online stores (React/Next.js)",
+    "title_highlight1": "WEB",
+    "title_middle": "MODERN",
+    "title_highlight2": "DEVELOPMENT"
+  },
+  "calculator": {
+    "title": "Calculate Website Cost",
+    "subtitle": "Calculate the cost of your project",
+    "type": "Website Type",
+    "pages": "Number of Pages",
+    "pages_count": "{{count}} pages",
+    "design": "Design",
+    "additional_services": "Additional Services",
+    "features": "Features",
+    "calculate": "Calculate",
+    "result": "Estimated cost:",
+    "submit": "Order",
+    "landing": "Landing Page",
+    "business_card": "Business Card Website",
+    "corporate": "Corporate Website",
+    "online_store": "Online Store",
+    "catalog": "Product Catalog",
+    "other": "Other Type",
+    "website": "Website",
+    "template_design": "Template Design",
+    "custom_design": "Custom Design (unique design)",
+    "custom_design_short": "Custom Design",
+    "premium_design": "Premium Design",
+    "seo": "SEO Optimization",
+    "content": "Content Population",
+    "domain": "Domain for a Year",
+    "hosting": "Hosting for a Year",
+    "support": "Technical Support",
+    "analytics": "Analytics Setup",
+    "year": "year",
+    "month": "month",
+    "price_note": "one-time payment",
+    "price_disclaimer": "* Contact our manager for the exact price",
+    "get_offer": "Get a Commercial Offer",
+    "offer_title": "Get a Commercial Offer",
+    "offer_description": "Leave your contact details, and we will send you a detailed commercial offer",
+    "additional_services_title": "Additional Services:",
+    "privacy_agree": "I agree with",
+    "thank_you_title": "Thank you for your request!",
+    "thank_you_message": "Your message has been successfully sent. We will contact you shortly.",
+    "ok_button": "Great",
+    "error_message": "Error submitting the form. Please try again.",
+    "form.name": "Your Name",
+    "form.email": "Email",
+    "form.phone": "Phone",
+    "form.message": "Message",
+    "form.send": "Submit",
+    "form.sending": "Sending...",
+    "form.required": "This field is required",
+    "form.invalid_email": "Invalid email format"
+  },
+  "contact": {
+    "title": "Leave a Request",
+    "name": "Your Name",
+    "phone": "Phone",
+    "email": "Email",
+    "message": "Comment",
+    "submit": "Submit Request",
+    "success": "Thank you! We will contact you shortly.",
+    "sending": "Sending..."
+  },
+  "footer": {
+    "copyright": "© 2025 WebVy. All rights reserved.",
+    "privacy": "privacy policy",
+    "social": "Social Networks"
+  },
+  "language": {
+    "uk": "Українська",
+    "en": "English",
+    "ru": "Русский"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "What we offer",
+    "web_development": {
+      "title": "Web Development",
+      "description": "I create modern websites with unique design and adaptability for all devices."
+    },
+    "interface_design": {
+      "title": "Interface Design",
+      "description": "I develop intuitive and attractive interfaces that enhance user experience."
+    },
+    "responsive_design": {
+      "title": "Responsive Design",
+      "description": "I ensure perfect website display on all devices: from mobile phones to large monitors."
+    },
+    "seo_optimization": {
+      "title": "SEO Optimization",
+      "description": "I configure websites for better ranking in search engines, which increases organic traffic."
+    },
+    "technical_support": {
+      "title": "Technical Support",
+      "description": "I provide continuous technical support and website updates to ensure its stable operation."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "I set up analytics systems to track user behavior and improve conversion."
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Our latest projects",
+    "view_all": "View all projects",
+    "visit_site": "Visit website",
+    "technologies": "Technologies",
+    "projects": {
+      "kaercher": {
+        "title": "Kaercher Rental",
+        "tag": "Equipment rental",
+        "description": "Website for rental services of vacuum cleaners and other professional cleaning equipment."
+      },
+      "kandinsky": {
+        "title": "Kandinsky Residence",
+        "tag": "Housing and utility services",
+        "description": "Website for a management company providing housing and utility services: maintenance, electricity, water supply and heat production."
+      },
+      "advokat": {
+        "title": "Proidak Law Firm",
+        "tag": "Legal Services",
+        "description": "Website for a lawyer presenting legal services, professional experience information, and contact details."
+      },
+      "powerix": {
+        "title": "Powerix Express",
+        "tag": "Cargo Taxi",
+        "description": "Website for cargo transportation service with the ability to calculate costs and order services online."
+      },
+      "dolyna": {
+        "title": "Soniachna Dolyna",
+        "tag": "Boarding House",
+        "description": "Website for a boarding house in the Carpathians with a virtual tour and booking system."
+      },
+      "kabinet": {
+        "title": "56 Cabinet",
+        "tag": "Restaurant",
+        "description": "Restaurant website with menu, gallery and table booking options."
+      },
+      "transfer": {
+        "title": "My Transfer",
+        "tag": "Transfers across Europe",
+        "description": "Comfortable transfers across Europe."
+      },
+      "prochepro": {
+        "title": "ProchePro",
+        "tag": "Service Marketplace",
+        "description": "French marketplace for household and professional services. The platform connects clients with verified providers for cleaning, repairs, IT, childcare and pet care across France."
+      },
+      "mcd": {
+        "title": "McD Crypto",
+        "tag": "Web3",
+        "description": "Cryptocurrency project on the Polygon blockchain. Website for purchasing and exchanging tokens."
+      }
+    },
+    "tech": {
+      "wordpress": "WordPress",
+      "php": "PHP",
+      "mysql": "MySQL",
+      "javascript": "JavaScript",
+      "responsive": "Responsive design",
+      "html5": "HTML5",
+      "css3": "CSS3",
+      "3d": "3D visualization",
+      "react": "React",
+      "web3": "Web3",
+      "rainbowkit": "RainbowKit",
+      "polygon": "Polygon",
+      "woocommerce": "WooCommerce",
+      "nextjs": "Next.js",
+      "tailwind": "Tailwind CSS"
+    }
+  },
+  "packages": {
+    "title": "Ready-made packages for different needs",
+    "subtitle": "Choose the right format: from a simple landing page to a full corporate website or online store.",
+    "cta": "Choose this package",
+    "landing_start": {
+      "title": "Landing Page Start",
+      "subtitle": "Single-page landing to quickly launch a product or service.",
+      "price": "from $150",
+      "point1": "Up to 3 sections (hero, about service, contact form)",
+      "point2": "Responsive design for mobile and desktop",
+      "point3": "Basic SEO setup and analytics integration"
+    },
+    "business_pro": {
+      "title": "Business Site Pro",
+      "subtitle": "Business website with multiple sections and a blog.",
+      "price": "from $200",
+      "point1": "From 5 pages (services, cases, about, contacts)",
+      "point2": "Forms and messengers integration",
+      "point3": "Performance and Core Web Vitals optimization"
+    },
+    "ecommerce_advanced": {
+      "title": "E-commerce Advanced",
+      "subtitle": "Online store with cart, catalog and payments.",
+      "price": "from $800",
+      "point1": "Product catalog, filters, product page",
+      "point2": "Cart, checkout and payment integration",
+      "point3": "Technical SEO and analytics setup"
+    }
+  },
+  "process": {
+    "title": "How we build your website",
+    "subtitle": "A clear, transparent process that removes anxiety and keeps the project under control.",
+    "step1": "Business and goals analysis",
+    "step2": "Wireframing structure and key screens",
+    "step3": "Design in your style focused on conversion",
+    "step4": "Development on Next.js / React",
+    "step5": "Testing performance, responsiveness and forms",
+    "step6": "Launch and basic SEO setup",
+    "step7": "Support and further development of the project"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Experience and Professionalism",
+    "alt": "Developer at work",
+    "intro": "My name is Vitalii, and I develop turnkey websites — from idea to full launch. I've been working in this field for over 6 years and help businesses get results, not just 'another page on the internet'.",
+    "skills": {
+      "title": "What I do best:",
+      "list": [
+        "Creating modern, responsive websites for mobile and desktop devices",
+        "Developing landing pages, corporate websites, online stores",
+        "Working with WordPress, Tilda, Webflow platforms",
+        "Setting up hosting, domain, basic SEO optimization",
+        "Simple and user-friendly design with a focus on user experience",
+        "Support and maintenance after launch"
+      ]
+    },
+    "why_me": {
+      "title": "Why choose me:",
+      "list": [
+        "I work 'turnkey' — I don't leave the client with an unfinished project",
+        "Always in touch, explaining in simple terms",
+        "I stick to deadlines and only promise what I can deliver",
+        "I have experience working with both small businesses and larger projects"
+      ]
+    },
+    "mission": "My goal is not just to make a website, but to create a working tool that will bring you profit, clients, and authority in your niche.",
+    "cta": "I look forward to working with you! ✉️"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "subtitle": "What clients say",
+    "leave_review": "Leave a review",
+    "no_reviews": "There are no reviews yet. Be the first to leave a review!",
+    "success_message": "Thank you for your review! It will be published after moderation.",
+    "error_message": "An error occurred while submitting your review. Please try again.",
+    "loading": "Loading reviews...",
+    "previous": "Previous review",
+    "next": "Next review",
+    "form": {
+      "name": "Your name",
+      "email": "Email",
+      "not_published": "will not be published",
+      "email_placeholder": "example@mail.com",
+      "email_hint": "Your email will remain confidential and will not be displayed on the site",
+      "rating": "Rating",
+      "text": "Your review",
+      "cancel": "Cancel",
+      "submit": "Submit review",
+      "submitting": "Submitting..."
+    },
+    "rating": {
+      "excellent": "Excellent",
+      "very_good": "Very good",
+      "good": "Good",
+      "fair": "Fair",
+      "poor": "Poor"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How long does it take to create a website?",
+        "answer": "The development time depends on the complexity of the project. A simple business card website can be ready in 1-2 weeks, while a complex e-commerce site may take 1-2 months."
+      },
+      {
+        "question": "What are the stages of website development?",
+        "answer": "The main stages include: requirements analysis, prototyping, design, layout, programming, testing, and launch."
+      },
+      {
+        "question": "Do you provide website support services?",
+        "answer": "Yes, we offer technical support and maintenance services for websites after launch."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "We use modern development technologies, including React, Angular, Vue.js, Node.js, PHP, WordPress and others, depending on the project needs."
+      },
+      {
+        "question": "Can I make changes to the project during development?",
+        "answer": "Yes, we work with an agile methodology that allows changes at different stages of development. Significant changes may affect timelines and costs."
+      }
+    ]
+  },
+  "order_form": {
+    "title": "Order a Website",
+    "description": "Fill out the form, and I will contact you to discuss the details",
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your e-mail",
+    "phone_placeholder": "Your phone number",
+    "message_placeholder": "What service are you interested in?",
+    "attach_file": "Attach file",
+    "sending": "Sending...",
+    "submit": "Submit",
+    "error_message": "Error sending form. Please try again.",
+    "thanks_title": "Thank you for your request!",
+    "thanks_message": "Your message has been successfully sent. We will contact you soon.",
+    "thanks_button": "Great"
+  },
+  "whatsapp": {
+    "order_short": "Hello! I want to order a website.",
+    "order_intro": "Hello! I want to order a website.",
+    "name_label": "Name",
+    "phone_label": "Phone",
+    "message_label": "Message",
+    "calculator_intro": "Hello! I want to get a commercial offer for website development.",
+    "calculator_site_type": "Website type",
+    "calculator_pages": "Number of pages",
+    "calculator_design": "Design",
+    "calculator_features": "Additional services",
+    "calculator_budget": "Estimated budget",
+    "package_intro": "Hello! I want to order a website development package.",
+    "package_name": "Package",
+    "package_price": "Estimated price"
+  },
+  "chatbot": {
+    "welcome": "Hello! I'm WebVy-bot. How can I help you?",
+    "header_title": "Hello! I'm WebVy-bot",
+    "status": "Online",
+    "input_placeholder": "Type a message...",
+    "message_label": "Message",
+    "send_button": "Send",
+    "open_chat": "Open chat",
+    "close_chat": "Close chat",
+    "quick_replies": {
+      "order": "Order a website",
+      "order_value": "I want to place an order",
+      "prices": "Prices",
+      "prices_value": "Service prices",
+      "contacts": "Contacts",
+      "contacts_value": "Contacts"
+    },
+    "keywords": {
+      "order": "order,website,create,development,build",
+      "price": "price,cost,pricing,how much,rates",
+      "contact": "contact,reach,phone,email,call"
+    },
+    "responses": {
+      "order": "📝 Great! To order a website, please fill out the form in the \"Order a Website\" section or email me at my@webvy.online. You can also call us at +380988302566.",
+      "price": "💰 Development costs depend on project complexity:\n• Landing page from $150\n• Corporate website from $400\n• E-commerce from $800\n\nFor an accurate estimate, use our calculator or contact me for a consultation.",
+      "contact": "📞 Phone: +380988302566\n✉️ Email: my@webvy.online\n💬 Telegram: @L_evenets\n📱 WhatsApp: +380988302566",
+      "default": "👋 Thank you for your message! I'll forward it to the developer, and they will contact you soon. If you have an urgent question, please call +380988302566."
+    }
+  },
+  "not_found": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "back_to_home": "Return to Home"
+  },
+  "phone_popup": {
+    "title": "Get a Free Consultation",
+    "description": "Leave your phone number, and we will contact you shortly to discuss your project",
+    "name_placeholder": "Your name",
+    "phone_placeholder": "+380 XX XXX XX XX",
+    "phone_format": "Format: +380 XX XXX XX XX",
+    "submit": "Get Consultation",
+    "submitting": "Sending...",
+    "error_phone": "Please enter a valid phone number in the format +380XXXXXXXXX",
+    "privacy_disclaimer": "By clicking the button, you agree to the processing of personal data",
+    "thanks_title": "Thank you for your request!",
+    "thanks_message": "We will contact you shortly"
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: July 30, 2025",
+    "intro": {
+      "title": "1. Introduction",
+      "p1": "We, WebVy company, care about the protection of your personal data and are committed to ensuring their confidentiality. This Privacy Policy explains what data we collect, how we use it, and how we protect it.",
+      "p2": "By using our website and services, you agree to the terms of this Privacy Policy."
+    },
+    "data_collection": {
+      "title": "2. What data we collect",
+      "intro": "We may collect the following types of personal data:",
+      "contact_info": {
+        "title": "Contact information:",
+        "desc": "name, email address, phone number."
+      },
+      "usage_info": {
+        "title": "Website usage information:",
+        "desc": "IP address, browser type, pages visited, time of visit."
+      },
+      "project_info": {
+        "title": "Project information:",
+        "desc": "data you provide through forms on our website, including the project cost calculator."
+      }
+    },
+    "data_usage": {
+      "title": "3. How we use your data",
+      "intro": "We use the collected data for:",
+      "services": "Providing and improving our services.",
+      "communication": "Communicating with you regarding inquiries and projects.",
+      "marketing": "Sending commercial offers and information about our services (only with your consent).",
+      "analytics": "Analyzing and improving the performance of our website.",
+      "legal": "Compliance with legal obligations."
+    },
+    "data_protection": {
+      "title": "4. Data protection",
+      "content": "We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, loss, or damage. However, no method of transmission over the Internet or electronic storage is 100% secure, so we cannot guarantee absolute security."
+    },
+    "third_parties": {
+      "title": "5. Disclosure to third parties",
+      "intro": "We do not sell, exchange, or transfer your personal data to third parties without your consent, except in the following cases:",
+      "services": "When necessary for the provision of services (for example, to our contractors).",
+      "legal": "To comply with the law, regulations, or court orders.",
+      "protection": "To protect our rights, property, or safety."
+    },
+    "cookies": {
+      "title": "6. Cookies",
+      "content": "Our website uses cookies to enhance your experience. You can configure your browser to reject cookies or notify you when they are sent. However, some features of our website may not work properly without cookies."
+    },
+    "your_rights": {
+      "title": "7. Your rights",
+      "intro": "According to data protection legislation, you have the right to:",
+      "access": "Access your personal data.",
+      "rectify": "Correct inaccurate personal data.",
+      "delete": "Delete your personal data.",
+      "restrict": "Restrict the processing of your personal data.",
+      "object": "Object to the processing of your personal data.",
+      "portability": "Receive your personal data in a structured, commonly used, and machine-readable format."
+    },
+    "changes": {
+      "title": "8. Changes to the Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated date of the last change. We recommend periodically reviewing this Privacy Policy."
+    },
+    "contact": {
+      "title": "9. Contact us",
+      "content": "If you have questions about this Privacy Policy or the processing of your personal data, please contact us at:"
+    },
+    "back_to_home": "Return to Home"
+  },
+  "consent": {
+    "title": "Cookie Settings",
+    "description": "To avoid potential loss of ad revenue, obtain consent from users in the European Economic Area (EEA), United Kingdom, and Switzerland using Google's certified consent management platform.",
+    "necessary": "Necessary Only",
+    "necessaryDescription": "Standard notifications with 'Necessary' cookies that are required for the website to function.",
+    "analytics": "Analytics",
+    "analyticsDescription": "Standard notifications with 'Necessary' and 'Analytics' cookies for website visit analysis.",
+    "all": "Accept All",
+    "allDescription": "Use Google's certified consent management platform for displaying ads.",
+    "privacyPolicy": "Google Privacy Policy",
+    "accept": "Accept"
+  },
+  "blog": {
+    "title": "Blog about web development and SEO",
+    "subtitle": "Practical articles for businesses that want more clients from the web.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_blog": "Blog",
+    "read_more": "Read article",
+    "tag_webdev": "Web development",
+    "tag_seo": "SEO",
+    "tag_hosting": "Hosting",
+    "tag_react": "React / Next.js",
+    "category_guides": "Guides & tips",
+    "category_tech": "Technologies",
+    "cta_title": "Need a website or technical audit?",
+    "cta_text": "If these topics resonate with you, you can order website development, an audit of your current project or a consultation. I will help you choose the stack, optimize speed and SEO, and design a structure that fits your goals.",
+    "cta_button": "Request a consultation",
+    "preview_title": "Expert articles on SEO, performance and Next.js",
+    "preview_subtitle": "Latest posts from the blog that show my approach to SEO, Core Web Vitals and modern frontend.",
+    "preview_cta": "Go to blog",
+    "posts": {
+      "yak-vybraty-hostyng": {
+        "title": "How to choose hosting for your business website",
+        "excerpt": "We go through the difference between shared hosting and VPS, what to look for in a plan and why the cheapest option can cost you customers.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "Hosting"],
+        "body": [
+          "Hosting is the foundation of any website. Even a perfect design and well-thought-out structure will not help if the site keeps going down or loads slowly. For a business, this means losing leads, trust and money.",
+          "The most common options are shared hosting and VPS. Shared works for small sites with low traffic, but you share resources with other clients. VPS provides more stability, flexibility and security, which is important for online stores and commercial projects.",
+          "When choosing hosting, pay attention to uptime (at least 99.5%), server response speed, support quality, backups and data center location. Good hosting combined with an optimized Next.js site gives fast page loads and better search rankings.",
+          "If you do not want to dig into technical details, I can help you choose the right plan and configure hosting for your project."
+        ]
+      },
+      "seo-dlya-lendingu": {
+        "title": "What is SEO for a landing page and where to start",
+        "excerpt": "A simple explanation of how search engines see one-page sites, which sections matter for SEO and what you can improve without a big team.",
+        "category": "SEO",
+        "tags": ["SEO", "Web development"],
+        "body": [
+          "Landing pages are often treated as purely advertising pages, but they can also bring organic traffic from search – if you structure and write them correctly.",
+          "Key SEO elements for a landing page: one clear H1 with the main keyword, logical H2 headings for sections, optimized descriptions of services, fast load speed and responsiveness. Avoid a solid 'wall of text' – it is better to break content into blocks and use bullet lists.",
+          "Do not forget about meta tags (title and description), structured data (<a href=\"https://schema.org\" target=\"_blank\" rel=\"noopener noreferrer\">schema.org</a>), markup for contacts and clean URLs. All this helps search engines better understand what your landing is about and who it should be shown to.",
+          "I build landing pages with SEO in mind from day one: from structure and copy to technical optimization at the Next.js level."
+        ]
+      },
+      "react-vs-wordpress": {
+        "title": "Why I prefer React/Next.js over WordPress",
+        "excerpt": "Comparing modern frontend stacks with classic CMS: performance, security, scalability and flexibility for business needs.",
+        "category": "Technologies",
+        "tags": ["React / Next.js", "Web development"],
+        "body": [
+          "WordPress is a powerful CMS, but for modern projects developers increasingly choose React and Next.js. The main reasons are speed, flexibility and better control over the frontend.",
+          "Next.js combines server-side rendering, static page generation and client components. This means better SEO, faster loading and the ability to build complex interfaces without the limitations of themes and plugins.",
+          "WordPress is convenient for simple sites and blogs, but over time plugins can conflict, slow things down and create security issues. With React/Next.js you get a clean architecture, predictable code and the ability to scale the project without hacks.",
+          "I use Next.js where speed, unique UI, integrations and long-term project evolution matter. For simpler cases with a classic admin panel we can also combine it with a headless CMS."
+        ]
+      },
+      "core-web-vitals": {
+        "title": "Core Web Vitals: why website speed matters for SEO",
+        "excerpt": "A clear explanation of LCP, CLS and INP and how they influence your rankings in Google.",
+        "category": "SEO",
+        "tags": ["SEO", "Web development"],
+        "body": [
+          "Core Web Vitals is a set of metrics from Google that show how comfortable it is for users to interact with your website. They directly affect rankings, especially on mobile.",
+          "LCP (Largest Contentful Paint) measures how quickly the main content of the page loads. CLS (Cumulative Layout Shift) shows how much the layout shifts while loading. INP (Interaction to Next Paint) measures how fast the site reacts to user actions.",
+          "An optimized Next.js website with proper caching, lazy-loading for images and a minimal amount of render-blocking scripts can significantly improve Core Web Vitals without complex hacks.",
+          "When I build websites, I take performance into account from day one: page structure, image handling, fonts, caching. This way the site not only looks good but also ranks consistently well."
+        ]
+      },
+            "struktura-lendingu": {
+        "title": "Landing page structure that actually sells",
+        "excerpt": "Which sections every high-converting landing page should have so it not only looks nice but also brings leads.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "SEO"],
+        "body": [
+          "An effective landing page is always about structure. In a few seconds the visitor should understand where they are, what you offer and why it is valuable.",
+          "The classic structure includes: a strong headline with a clear promise, a supporting subheadline, a benefits section, social proof (testimonials, case studies), a detailed description of the service or product, an FAQ block and a clear call-to-action.",
+          "Every section should support one goal – getting the visitor to take action. Extra information, chaotic elements or weak CTAs reduce conversion, even if the design looks modern.",
+          "When I design landing pages, I help clients build this logic from the first screen to the order form so that marketing and design work together."
+        ]
+      },
+      "optimizaciya-shvydkosti": {
+        "title": "Speed optimization: making your site faster in practice",
+        "excerpt": "What actually affects your website load speed and how to improve it quickly without a full redesign.",
+        "category": "Technologies",
+        "tags": ["SEO", "Web development"],
+        "body": [
+          "Page load speed is one of the key factors that affect both user experience and Google rankings. Every extra second of delay increases the percentage of visitors who simply close the page.",
+          "The most common issues are heavy unoptimized images, missing caching and unnecessary scripts and styles that block rendering. In practice you can fix this by compressing images, using modern formats (WebP), enabling a CDN and configuring cache properly.",
+          "Next.js gives you powerful tools for optimization: automatic code-splitting, the Image component, static generation and server-side rendering. The main thing is to set up the project correctly and not turn the page into a chaotic collection of third-party scripts.",
+          "When I work on websites, I always check <a href=\"/blog/core-web-vitals/\">Core Web Vitals</a> and optimize critical resources so that pages load quickly even on mobile connections. If you want to check your current project, you can simply <a href=\"/#order\">request an audit or development</a>."
+        ]
+      },
+      "konversiya-lendingu": {
+        "title": "How to increase landing page conversion without more ad spend",
+        "excerpt": "Which changes in structure, copy and design can bring more leads without increasing the advertising budget.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "SEO"],
+        "body": [
+          "Most business owners try to solve a low number of leads by spending more on ads. But often it is more effective to first improve the landing page itself.",
+          "Start with the hero section: a clear headline with a value proposition, a supporting subheadline and a visible call-to-action button. Then build a logical structure of sections: benefits, social proof, detailed service description, answers to objections and only then the form.",
+          "Wording matters a lot: be specific instead of vague promises, focus on results for the client and use simple, clear CTAs like \"Get a consultation\" or \"Calculate the price\". To roughly estimate the budget right now, you can use the <a href=\"/#calculator\">website cost calculator</a>.",
+          "When I optimize landings for conversion, I analyze the user journey, remove unnecessary steps, improve readability and place accents where they really influence the decision to submit a request. If you want to review your landing in detail, just <a href=\"/#order\">request a consultation</a>."
+        ]
+      },
+      "bezpeka-saitu": {
+        "title": "Website security basics many businesses ignore",
+        "excerpt": "Why SSL, updates and backups are not just a formality but a must for any business website.",
+        "category": "Technologies",
+        "tags": ["Web development"],
+        "body": [
+          "Even a small corporate site can become a target for attacks: password brute-force, exploits in outdated plugins, spam bots in forms. The consequences are data loss, hosting suspension or being flagged as unsafe by browsers.",
+          "At minimum you should have: an SSL certificate, regular CMS and plugin updates, strong passwords with limited access and basic protection of forms from bots (reCAPTCHA or alternatives).",
+          "For custom Next.js projects it is also important to handle secrets correctly, avoid storing keys in public code and configure security headers and protection against XSS/CSRF attacks.",
+          "In my projects I follow modern security practices and recommend simple routines for clients: who has access, how often backups are made and what to do in case of an incident."
+        ]
+      },
+      "stvorennya-saitu-cina": {
+        "title": "How much does a website really cost: what affects the price",
+        "excerpt": "Breaking down what forms the cost of a website, why a proper landing page cannot cost like a coffee and which factors actually influence the budget.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "SEO"],
+        "body": [
+          "When a business orders a website for the first time, the question \"how much does it cost?\" appears immediately. The generic answer \"it depends\" helps no one. In reality, the price of a website comes from several clear components: project type, design, functionality, integrations, content and ongoing support.",
+          "The cheapest option is a simple template-based landing page without complex features. Above that are custom-designed landings, corporate sites with multiple sections, blogs and online stores. More pages, integrations (CRM, payments, personal accounts) and custom components mean a higher budget.",
+          "The tech stack also affects the price. A site built with a modern framework like Next.js gives you better performance, SEO and scalability, but requires a more experienced developer than a drag-and-drop builder or a basic template.",
+          "To get a realistic estimate for your case, you can use the <a href=\"/#calculator\">website cost calculator</a> on this page or simply <a href=\"/#order\">request a detailed consultation</a>. I will help you choose a solution without overpaying and with room for future growth." 
+        ]
+      },
+      "landing-chi-site": {
+        "title": "Landing page or multi-page website: what should your business choose",
+        "excerpt": "Explaining when a one-page landing is enough and when it is better to invest in a full multi-page website with several sections and a blog.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "SEO"],
+        "body": [
+          "A landing page is a focused page built around one main action: submit a request, buy a product, book a call. It is perfect for testing a niche, promoting a single service or running ad campaigns with a clear offer.",
+          "A multi-page website is needed when you have several directions, different audiences, content marketing (a blog), SEO for many queries and a more complex structure. Examples include studios with multiple services, manufacturing companies, educational projects or stores with a catalog.",
+          "If you are just starting and want to quickly validate demand, a well-designed single page is often enough. But if you already have an established business, several services, case studies, articles and long-term plans, it usually makes sense to invest into a full website from day one.",
+          "I help clients choose the right format during the briefing stage. After a short call we can understand whether a high-quality landing is enough or we should plan a multi-page structure. You can <a href=\"/#order\">request a consultation</a>, and we will pick the optimal format for your goals." 
+        ]
+      },
+      "seo-pislya-zapusku": {
+        "title": "SEO after website launch: what to do next to get traffic",
+        "excerpt": "The site is live — what now? A checklist of actions that will help grow organic traffic instead of just waiting.",
+        "category": "Guides & tips",
+        "tags": ["SEO"],
+        "body": [
+          "Many people think that once the site is launched, the main task is to turn on ads and wait for leads. But if you want stable organic traffic, you need to build an SEO routine from the start: analytics, content, links and technical health.",
+          "The first step is to connect analytics (Google Analytics or alternatives) and set up <a href=\"https://search.google.com/search-console/about\" target=\"_blank\" rel=\"noopener noreferrer\">Google Search Console</a>. There you will see how your site is indexed, which queries it appears for and which pages need attention.",
+          "The second step is a content plan. Regularly publishing helpful blog posts, updating key pages, improving copy and headings sends a strong signal that your website is alive and evolving.",
+          "The third step is technical health: performance (see the articles on <a href=\"/blog/core-web-vitals/\">Core Web Vitals</a> and speed optimization), mobile friendliness, clean URLs and no critical errors. Together this defines whether your site will move up or slowly drop in search results.",
+          "If you want a specific action plan for your project, the easiest approach is to <a href=\"/#order\">request a consultation</a>. I will analyze your current site and suggest prioritized steps that will bring the biggest impact." 
+        ]
+      },
+      "pomylky-pry-zamovlenni-saitu": {
+        "title": "Common mistakes when ordering a website: how not to ruin the project at the start",
+        "excerpt": "Typical decisions at the ordering stage that kill results: from saving on the wrong things to having no clear requirements.",
+        "category": "Guides & tips",
+        "tags": ["Web development", "SEO"],
+        "body": [
+          "One of the most common mistakes when ordering a website is to start with the question \"how much does it cost?\" without understanding why you need the site and what business problem it should solve. As a result the business gets a beautiful page with no leads, and the developer formally delivers on a weak specification.",
+          "The second mistake is having no clear requirements. If there is no description of goals, structure, content expectations and integrations, the project constantly shifts: new wishes appear, deadlines slip, the budget grows and no one is really satisfied.",
+          "The third mistake is saving on the important and overpaying for the secondary. A lot of budget goes into complex animations while speed, responsiveness, SEO and analytics are ignored. Or the cheapest option is chosen, which is almost impossible to scale properly later.",
+          "To avoid these problems, at the start you should: clearly define the goals of the site, outline a minimal page structure, list key integrations (payments, CRM, forms) and separate \"must have\" from \"nice to have\". This gives a predictable scope and a realistic result.",
+          "If you want to go through the website ordering stage without chaos and unnecessary costs, the easiest way is to <a href=\"/#order\">request a consultation</a>. I will help you create a solid brief, choose the right tech stack and focus on what really affects results: speed, SEO and user experience." 
+        ]
+      }
+    }
+  }
+}

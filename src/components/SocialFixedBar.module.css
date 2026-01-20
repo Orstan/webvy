@@ -1,0 +1,93 @@
+.socialFixedBar {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff7b00; /* Оранжевий колір як у бота */
+  color: #fff;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.mainButton.active {
+  transform: rotate(45deg);
+}
+
+.socialIcons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+.socialIcons.open {
+  opacity: 1;
+  visibility: visible;
+  bottom: 70px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 2px solid #fff;
+}
+
+.socialIcon:hover {
+  transform: scale(1.1);
+}
+
+.phone {
+  background-color: #4caf50; /* Зелений */
+}
+
+.email {
+  background-color: #9c27b0; /* Фіолетовий */
+}
+
+.telegram {
+  background-color: #2196f3; /* Синій */
+}
+
+.whatsapp {
+  background-color: #4caf50; /* Зелений */
+}
+
+@media (max-width: 768px) {
+  .socialFixedBar {
+    left: 20px;
+    right: auto;
+    bottom: 15px;
+  }
+  
+  .socialIcons.open {
+    bottom: 60px;
+  }
+}

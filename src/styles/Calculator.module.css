@@ -1,0 +1,378 @@
+.calculator {
+  padding: 80px 0;
+  background-color: #0a0a0a;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.calculatorWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calculatorForm {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.formGroup {
+  margin-bottom: 25px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+
+.infoIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 12px;
+  margin-left: 5px;
+  cursor: help;
+}
+
+.select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.select:focus {
+  border-color: #00c8ff;
+  outline: none;
+}
+
+.sliderContainer {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #00c8ff 0%, #ff0099 100%);
+  border-radius: 3px;
+  appearance: none;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #999;
+  font-size: 12px;
+}
+
+.sliderValue {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00c8ff;
+  font-weight: 500;
+}
+
+.checkboxGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.checkboxItem {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxItem input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  accent-color: #00c8ff;
+}
+
+.checkboxItem label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+
+.featurePrice {
+  color: #00c8ff;
+  font-weight: 500;
+}
+
+.calculateButton {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(90deg, #00c8ff 0%, #ff0099 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.calculateButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.calculatorResult {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease;
+}
+
+.calculatorResult.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.priceBox {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.priceBox h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 700;
+  color: #00c8ff;
+  margin-bottom: 5px;
+}
+
+.priceNote {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.priceDisclaimer {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.resultDetails {
+  margin-bottom: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.resultItemHeader {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #00c8ff;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+}
+
+.offerButton {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #ff0099;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.offerButton:hover {
+  background-color: #e6008a;
+}
+
+/* Модальне вікно */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.closeModal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+
+.modalHeader {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modalHeader h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.modalHeader p {
+  color: #999;
+  font-size: 14px;
+}
+
+.offerForm .formGroup {
+  margin-bottom: 15px;
+}
+
+.offerForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.offerForm input,
+.offerForm textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.offerForm input:focus,
+.offerForm textarea:focus {
+  border-color: #00c8ff;
+  outline: none;
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00c8ff 0%, #ff0099 100%);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.successMessage {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.successMessage p {
+  margin-bottom: 10px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+  .calculatorWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calculatorForm,
+  .calculatorResult {
+    max-width: 100%;
+  }
+  
+  .checkboxGroup {
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+  
+  .price {
+    font-size: 36px;
+  }
+}

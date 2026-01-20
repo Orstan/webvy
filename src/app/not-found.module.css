@@ -1,0 +1,300 @@
+.notFoundContainer {
+  padding: 100px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.notFoundContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+}
+
+.errorCode {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #4a6cf7, #41b3ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 10px 30px rgba(74, 108, 247, 0.5);
+  animation: pulse 3s infinite;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  margin-bottom: 60px;
+}
+
+.homeButton {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #4a6cf7, #41b3ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(74, 108, 247, 0.3);
+}
+
+.homeButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(74, 108, 247, 0.5);
+}
+
+/* Анімована ілюстрація */
+.illustration {
+  position: relative;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.planet {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, #1a237e, #283593);
+  border-radius: 50%;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 50px rgba(26, 35, 126, 0.7), inset 0 0 20px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.planet::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  top: 50%;
+  left: -20px;
+  transform: rotate(-20deg);
+  border-radius: 50%;
+}
+
+.planet::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  top: 30px;
+  left: 30px;
+}
+
+.astronaut {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+.astronautBody {
+  width: 60px;
+  height: 90px;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  position: relative;
+}
+
+.astronautHead {
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.astronautHead::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background-color: rgba(74, 108, 247, 0.7);
+  border-radius: 10px;
+  top: 20px;
+  left: 10px;
+}
+
+.astronautArm1 {
+  width: 20px;
+  height: 50px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  border-radius: 10px;
+  transform-origin: top center;
+  animation: wave 3s ease-in-out infinite;
+}
+
+.astronautArm2 {
+  width: 20px;
+  height: 50px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  border-radius: 10px;
+}
+
+.astronautLeg1 {
+  width: 20px;
+  height: 40px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  border-radius: 10px;
+}
+
+.astronautLeg2 {
+  width: 20px;
+  height: 40px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  border-radius: 10px;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.stars::before,
+.stars::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 
+    10px 30px white, 
+    50px 80px white, 
+    100px 20px white, 
+    150px 50px white, 
+    200px 80px white, 
+    250px 30px white, 
+    300px 60px white, 
+    350px 20px white, 
+    400px 70px white, 
+    450px 30px white, 
+    500px 50px white, 
+    550px 10px white, 
+    600px 40px white, 
+    650px 70px white, 
+    700px 30px white, 
+    750px 60px white;
+  animation: twinkle 4s infinite;
+}
+
+.stars::after {
+  top: 150px;
+  animation-delay: 2s;
+}
+
+/* Анімації */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .errorCode {
+    font-size: 100px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+  
+  .description {
+    font-size: 16px;
+  }
+  
+  .illustration {
+    height: 200px;
+  }
+  
+  .planet {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .astronaut {
+    transform: scale(0.7) translateX(-70%);
+  }
+}

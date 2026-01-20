@@ -1,0 +1,120 @@
+.services {
+  padding: 80px 0;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #1a237e, #4a6cf7, #41b3ff);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  animation: gradientShift 5s ease infinite;
+  background-size: 200% 200%;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.serviceItem {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(74, 108, 247, 0.3);
+  border-color: rgba(74, 108, 247, 0.3);
+}
+
+.serviceIcon {
+  background: rgba(74, 108, 247, 0.15);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.serviceIcon svg {
+  font-size: 28px;
+  color: #4A6CF7;
+}
+
+.serviceItem:hover .serviceIcon {
+  background: linear-gradient(45deg, rgba(26, 35, 126, 0.2), rgba(74, 108, 247, 0.2), rgba(65, 179, 255, 0.2));
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+  transform: scale(1.05);
+}
+
+.serviceItem h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.serviceItem p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  flex-grow: 1;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Медіа-запити для адаптивної сітки */
+@media (max-width: 992px) {
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

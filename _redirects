@@ -1,0 +1,29 @@
+# HTTP to HTTPS redirect
+http://webvy.online/* https://webvy.online/:splat 301!
+http://www.webvy.online/* https://webvy.online/:splat 301!
+
+# WWW to non-WWW redirect
+https://www.webvy.online/* https://webvy.online/:splat 301!
+
+# Blog article redirects (without trailing slash to with trailing slash)
+https://webvy.online/blog/struktura-lendingu https://webvy.online/blog/struktura-lendingu/ 301
+https://webvy.online/blog/core-web-vitals https://webvy.online/blog/core-web-vitals/ 301
+https://webvy.online/blog/react-vs-wordpress https://webvy.online/blog/react-vs-wordpress/ 301
+https://webvy.online/blog/seo-pislya-zapusku https://webvy.online/blog/seo-pislya-zapusku/ 301
+https://webvy.online/blog/seo-dlya-lendingu https://webvy.online/blog/seo-dlya-lendingu/ 301
+https://webvy.online/blog/landing-chi-site https://webvy.online/blog/landing-chi-site/ 301
+https://webvy.online/blog/stvorennya-saitu-cina https://webvy.online/blog/stvorennya-saitu-cina/ 301
+https://webvy.online/blog/yak-vybraty-hostyng https://webvy.online/blog/yak-vybraty-hostyng/ 301
+
+# Portfolio redirect
+https://webvy.online/portfolio https://webvy.online/portfolio/ 301
+
+# Remove index.html
+https://webvy.online/index.html https://webvy.online/ 301
+
+# Search parameter handling
+https://webvy.online/?q={search_term_string} https://webvy.online/blog?search={search_term_string} 301
+
+# Remove problematic paths
+https://webvy.online/kzxa/ https://webvy.online/ 410
+https://www.webvy.online/kzxa/ https://webvy.online/ 410

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Головна сторінка -->
+  <url>
+    <loc>https://webvy.online/</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://webvy.online/images/preview.jpg</image:loc>
+      <image:title>WebVy — Розробка сайтів під ключ</image:title>
+      <image:caption>Замовити сайт: лендінг, візитка, інтернет-магазин</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Сторінка портфоліо -->
+  <url>
+    <loc>https://webvy.online/portfolio/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Калькулятор вартості сайту -->
+  <url>
+    <loc>https://webvy.online/#calculator</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#calculator"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#calculator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#calculator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#calculator"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Готові рішення (пакети) -->
+  <url>
+    <loc>https://webvy.online/#packages</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#packages"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#packages"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#packages"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#packages"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Послуги з розробки сайтів -->
+  <url>
+    <loc>https://webvy.online/#services</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#services"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Про компанію WebVy -->
+  <url>
+    <loc>https://webvy.online/#about</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#about"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#about"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Відгуки клієнтів -->
+  <url>
+    <loc>https://webvy.online/#reviews</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#reviews"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#reviews"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#reviews"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#reviews"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- FAQ по розробці сайтів -->
+  <url>
+    <loc>https://webvy.online/#faq</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#faq"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Етапи розробки сайтів -->
+  <url>
+    <loc>https://webvy.online/#process</loc>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://webvy.online/#process"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webvy.online/#process"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webvy.online/#process"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://webvy.online/#process"/>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Превʼю блогу на головній -->
+  <url>
+    <loc>https://webvy.online/#blog-preview</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Блог: список статей -->
+  <url>
+    <loc>https://webvy.online/blog/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Додаткова стаття блогу -->
+  <url>
+    <loc>https://webvy.online/blog/pomylky-pry-zamovlenni-saitu/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Окремі статті блогу -->
+  <url>
+    <loc>https://webvy.online/blog/yak-vybraty-hostyng/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://webvy.online/blog/stvorennya-saitu-cina/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/landing-chi-site/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/seo-pislya-zapusku/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/seo-dlya-lendingu/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/react-vs-wordpress/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/core-web-vitals/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/struktura-lendingu/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/optimizaciya-shvydkosti/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/konversiya-lendingu/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webvy.online/blog/bezpeka-saitu/</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Сторінка політики конфіденційності -->
+  <url>
+    <loc>https://webvy.online/privacy-policy</loc>
+    <lastmod>2025-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

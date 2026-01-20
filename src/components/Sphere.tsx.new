@@ -1,0 +1,131 @@
+'use client';
+
+import React, { useEffect, useRef } from 'react';
+
+const Sphere = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (!canvasRef.current) return;
+
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Встановлюємо розмір canvas
+    const setCanvasSize = () => {
+      const container = canvas.parentElement;
+      if (container) {
+        canvas.width = container.clientWidth;
+        canvas.height = container.clientHeight;
+      }
+    };
+
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize);
+
+    // Параметри сфери
+    const points: { x: number; y: number; z: number }[] = [];
+    const numPoints = 2000; // Збільшуємо кількість точок для кращої деталізації
+    const radius = Math.min(canvas.width, canvas.height) * 0.45; // Збільшуємо радіус
+    
+    // Створюємо точки на сфері
+    for (let i = 0; i < numPoints; i++) {
+      const phi = Math.acos(-1 + (2 * i) / numPoints);
+      const theta = Math.sqrt(numPoints * Math.PI) * phi;
+      
+      points.push({
+        x: radius * Math.cos(theta) * Math.sin(phi),
+        y: radius * Math.sin(theta) * Math.sin(phi),
+        z: radius * Math.cos(phi)
+      });
+    }
+
+    // Анімація
+    let animationFrameId: number;
+    let rotation = 0;
+    
+    // Фіксований колір для сфери - рожевий/фіолетовий
+    const sphereColor = '#e83dff'; // Яскравий рожевий/фіолетовий
+    
+    // Функція для анімації
+    const animate = () => {
+      // Очищаємо полотно
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Збільшуємо швидкість обертання
+      rotation += 0.002;
+      
+      // Центр полотна
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+
+      // Малюємо лінії між точками
+      for (let i = 0; i < points.length; i++) {
+        // Обертаємо точки навколо осі Y
+        const y = points[i].y;
+        const z = points[i].z * Math.cos(rotation) - points[i].x * Math.sin(rotation);
+        const x = points[i].z * Math.sin(rotation) + points[i].x * Math.cos(rotation);
+        
+        // Додаємо обертання навколо осі X для більш складної анімації
+        const rotatedY = y * Math.cos(rotation * 0.7) - z * Math.sin(rotation * 0.7);
+        const rotatedZ = y * Math.sin(rotation * 0.7) + z * Math.cos(rotation * 0.7);
+        
+        // Проектуємо 3D точки на 2D полотно
+        const scale = 1000 / (1000 + rotatedZ);
+        const projectedX = centerX + x * scale;
+        const projectedY = centerY + rotatedY * scale;
+        
+        // Знаходимо найближчі точки для створення ліній
+        for (let j = i + 1; j < points.length; j++) {
+          // Обертаємо другу точку
+          const y2 = points[j].y;
+          const z2 = points[j].z * Math.cos(rotation) - points[j].x * Math.sin(rotation);
+          const x2 = points[j].z * Math.sin(rotation) + points[j].x * Math.cos(rotation);
+          
+          const rotatedY2 = y2 * Math.cos(rotation * 0.7) - z2 * Math.sin(rotation * 0.7);
+          const rotatedZ2 = y2 * Math.sin(rotation * 0.7) + z2 * Math.cos(rotation * 0.7);
+          
+          const scale2 = 1000 / (1000 + rotatedZ2);
+          const projectedX2 = centerX + x2 * scale2;
+          const projectedY2 = centerY + rotatedY2 * scale2;
+          
+          // Обчислюємо відстань між точками
+          const dx = projectedX2 - projectedX;
+          const dy = projectedY2 - projectedY;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+          
+          // Малюємо лінії між близькими точками
+          if (distance < radius * 0.15) { // Зменшуємо поріг для меншої кількості ліній
+            // Змінюємо прозорість в залежності від відстані
+            const alpha = 1 - distance / (radius * 0.15);
+            
+            ctx.beginPath();
+            ctx.moveTo(projectedX, projectedY);
+            ctx.lineTo(projectedX2, projectedY2);
+            ctx.strokeStyle = `${sphereColor}${Math.floor(alpha * 255).toString(16).padStart(2, '0')}`;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+        }
+      }
+      
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    
+    animate();
+    
+    return () => {
+      window.removeEventListener('resize', setCanvasSize);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
+
+  return (
+    <div className="sphere-container">
+      <canvas ref={canvasRef} className="w-full h-full"></canvas>
+    </div>
+  );
+};
+
+export default Sphere;

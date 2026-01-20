@@ -1,0 +1,164 @@
+.footer {
+  background-color: #22222a;
+  color: #fff;
+  padding: 50px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  grid-column: 1;
+}
+
+.logoImage {
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.footerContact h3,
+.footerSocial h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footerMiddle {
+  grid-column: 2;
+}
+
+.footerRight {
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.copyText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.copyText:hover {
+  color: #4A6CF7;
+}
+
+.icon {
+  color: #4A6CF7;
+  font-size: 18px;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #4A6CF7;
+}
+
+.footerCopyright {
+  text-align: right;
+  color: #aaa;
+  font-size: 14px;
+  grid-column: 4;
+  align-self: center;
+  justify-self: end;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .footerLogo,
+  .footerMiddle,
+  .footerRight,
+  .footerCopyright {
+    width: 100%;
+    grid-column: auto;
+  }
+  
+  .footerLogo {
+    align-items: center;
+    order: 1;
+  }
+  
+  .footerMiddle {
+    order: 2;
+    margin-top: 20px;
+  }
+  
+  .footerRight {
+    order: 3;
+    margin-top: 20px;
+  }
+  
+  .footerCopyright {
+    order: 4;
+    text-align: center;
+    margin-top: 30px;
+    justify-self: center;
+    white-space: normal;
+  }
+  
+  .contactInfo, 
+  .socialLinks {
+    align-items: center;
+  }
+  
+  .tagline {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .footer {
+    padding: 40px 0 20px;
+  }
+}
