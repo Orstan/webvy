@@ -1,6 +1,12 @@
 import Link from 'next/link';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import BlogPostClient from './BlogPostClient';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1e3a8a',
+};
 
 const postsMeta = [
   { slug: 'yak-vybraty-hostyng', categoryKey: 'blog.category_guides', tagsKeys: ['blog.tag_webdev', 'blog.tag_hosting'] },

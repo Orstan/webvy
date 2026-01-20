@@ -1,5 +1,5 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Montserrat } from 'next/font/google'
 import ClientChatBot from '@/components/ClientChatBot'
 import ClientScripts from '@/components/ClientScripts'
@@ -19,6 +19,12 @@ const montserrat = Montserrat({
   display: 'swap',
   variable: '--font-montserrat'
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1e3a8a',
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://webvy.online'),
@@ -63,8 +69,6 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/apple-icon.png',
   },
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#1e3a8a',
   alternates: {
     canonical: 'https://webvy.online/',
     languages: {
